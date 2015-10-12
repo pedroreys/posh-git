@@ -12,12 +12,14 @@ Import-Module .\posh-git
 function global:prompt {
     $realLASTEXITCODE = $LASTEXITCODE
 
+    Write-VcsStatus -nonewline
+
     Write-Host($pwd.ProviderPath) -nonewline
 
-    Write-VcsStatus
-
     $global:LASTEXITCODE = $realLASTEXITCODE
-    return "> "
+
+    Write-Host
+    return "$ "
 }
 
 Pop-Location

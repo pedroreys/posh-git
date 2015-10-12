@@ -4,7 +4,7 @@
 $global:GitPromptSettings = New-Object PSObject -Property @{
     DefaultForegroundColor                      = $Host.UI.RawUI.ForegroundColor
 
-    BeforeText                                  = ' ['
+    BeforeText                                  = '['
     BeforeForegroundColor                       = [ConsoleColor]::Yellow
     BeforeBackgroundColor                       = $Host.UI.RawUI.BackgroundColor
     
@@ -12,7 +12,7 @@ $global:GitPromptSettings = New-Object PSObject -Property @{
     DelimForegroundColor                        = [ConsoleColor]::Yellow
     DelimBackgroundColor                        = $Host.UI.RawUI.BackgroundColor
 
-    AfterText                                   = ']'
+    AfterText                                   = '] '
     AfterForegroundColor                        = [ConsoleColor]::Yellow
     AfterBackgroundColor                        = $Host.UI.RawUI.BackgroundColor
 
